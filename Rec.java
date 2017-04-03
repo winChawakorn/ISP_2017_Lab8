@@ -47,12 +47,12 @@ public class Rec {
         System.out.println(sumDigits(123456));
         System.out.println(sumDigits(1));
         System.out.println(sumDigits(0));
-		System.out.println("-----------------");
-		System.out.println(removeChar("eawabbcceccddeeaaeeeee", 'e'));
-		System.out.println(removeChar("acacacacac", 'a'));
-		System.out.println("-----------------");		
-		System.out.println(reverse("aaabbbaccabda"));
+	System.out.println("-----------------");
+	System.out.println(removeChar("eawabbcceccddeeaaeeeee", 'e'));
+	System.out.println(removeChar("acacacacac", 'a'));
+	System.out.println("-----------------");		
+	System.out.println(reverse("aaabbbaccabda"));
         System.out.println(reverse("abbcccdeaaa"));
-		System.out.println(reverse("AMANAPLANACANALPANAMA"));
+	System.out.println(reverse("AMANAPLANACANALPANAMA"));
     }
 }
