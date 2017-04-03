@@ -6,9 +6,11 @@ public class Rec {
 		numDigits(1356) = 4.
 		Precondition: n >= 0. */
     public static int numDigits(int n) {
-	
-	// fill me in
-	
+    	if (n > -10 && n < 10) {
+			return 1;
+		} else {
+			return numDigits(n / 10) + 1;
+		}
     }
 
     /** = sum of the digits in the decimal representation of n.
@@ -17,7 +19,10 @@ public class Rec {
       Precondition: n >= 0. */
     public static int sumDigits(int n) {
 	
-	// fill me in
+	if (n / 10 == 0) {
+			return n;
+		} else
+			return n % 10 + sumDigits(n / 10);
 	
     }
 	
@@ -36,11 +41,12 @@ public class Rec {
 	
     /** = a copy of s with characters in reverse order.
 		Example: reverse("abcdefg") = "gfedcba". */
-	public static String reverse(String s) {
-	
-	// fill me in
-	
-	}
+    public static String reverse(String s) {
+        if (s.length() <= 1) {
+            return s;
+        }
+        return s.substring(s.length() - 1) + reverse(s.substring(0, s.length() - 1));
+    }
 
     public static void main(String[] args) {
         System.out.println(numDigits(123));
