@@ -31,11 +31,12 @@ public class Rec {
 	
     /** = a copy of s with characters in reverse order.
 		Example: reverse("abcdefg") = "gfedcba". */
-	public static String reverse(String s) {
-	
-	// fill me in
-	
-	}
+    public static String reverse(String s) {
+        if (s.length() <= 1) {
+            return s;
+        }
+        return s.substring(s.length() - 1) + reverse(s.substring(0, s.length() - 1));
+    }
 
     public static void main(String[] args) {
         System.out.println(numDigits(123));
