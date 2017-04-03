@@ -6,9 +6,11 @@ public class Rec {
 		numDigits(1356) = 4.
 		Precondition: n >= 0. */
     public static int numDigits(int n) {
-	
-	// fill me in
-	
+    	if (n > -10 && n < 10) {
+			return 1;
+		} else {
+			return numDigits(n / 10) + 1;
+		}
     }
 
     /** = sum of the digits in the decimal representation of n.
